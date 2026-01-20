@@ -19,10 +19,33 @@ A collection of R color palettes inspired by some films.
 | **Little Miss Sunshine** | ![](https://placehold.co/25x25/F1CB3C/F1CB3C.png) ![](https://placehold.co/25x25/5B9EAE/5B9EAE.png) ![](https://placehold.co/25x25/D64545/D64545.png) ![](https://placehold.co/25x25/E8E4D8/E8E4D8.png) ![](https://placehold.co/25x25/452E28/452E28.png) |
 | **The Neon Demon** | ![](https://placehold.co/25x25/C20077/C20077.png) ![](https://placehold.co/25x25/8B3A8B/8B3A8B.png) ![](https://placehold.co/25x25/4A2850/4A2850.png) ![](https://placehold.co/25x25/0F3460/0F3460.png) ![](https://placehold.co/25x25/0A6A8A/0A6A8A.png) ![](https://placehold.co/25x25/0A9ACA/0A9ACA.png) |
 
-## 🛠 Installation
+## Installation
 Run this in R to install:
 
 ```R
 if (!require("remotes")) install.packages("remotes")
 remotes::install_github("asliaydinlar1/MoviePalettes")
+```
+
+Once installed, always load the library at the start of your script.
+```R
+library(MoviePalettes)
+library(ggplot2)
+```
+
+## Some Examples
+```R
+# We take colors 5, 6, and 7 from the 'Fantastic Planet' palette
+my_colors <- my_pal("Fantastic_Planet")[5:7]
+
+ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
+  geom_boxplot(alpha = 0.8, color = "#444444") +
+  scale_fill_manual(values = my_colors) +
+  theme_minimal() +
+  labs(title = "Iris Dimensions", subtitle = "Using Fantastic Planet colors")
+```
+
+
+
+
 
