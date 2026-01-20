@@ -44,6 +44,16 @@ ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
   theme_minimal() +
   labs(title = "Iris Dimensions", subtitle = "Using Fantastic Planet colors")
 ```
+<img width="614" height="410" alt="Fantastic_Planet_Rplot1" src="https://github.com/user-attachments/assets/926338c3-cf81-4ab5-9f35-3f7e3883cf05"   /> 
+
+```R
+ggplot(mpg, aes(x = class, fill = class)) +
+  geom_bar() +
+  scale_fill_movie("Portrait_of_a_Lady_on_Fire") +
+  theme_minimal()
+```
+<img width="611" height="405" alt="Rplot" src="https://github.com/user-attachments/assets/d702887d-6d54-4bed-8b00-ec6ed53f13e6" />
+
 
 
 
