@@ -1,2 +1,4 @@
 export(my_pal)
 export(my_colors)
+export(scale_fill_movie)
+export(scale_color_movie)
