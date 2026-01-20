@@ -50,9 +50,15 @@ ggplot(iris, aes(x = Species, y = Sepal.Width, fill = Species)) +
 ggplot(mpg, aes(x = class, fill = class)) +
   geom_bar() +
   scale_fill_movie("Portrait_of_a_Lady_on_Fire") +
-  theme_minimal()
+  theme_minimal() +
+  labs(
+    title = "Car Counts by Vehicle Class", subtitle = "Using Portrait of a Lady on Fire colors",
+    x = "Vehicle Type", y = "Number of Cars", fill = "Class"
+  )
 ```
-<img width="611" height="405" alt="Rplot" src="https://github.com/user-attachments/assets/d702887d-6d54-4bed-8b00-ec6ed53f13e6" />
+<img width="721" height="428" alt="Rplot01" src="https://github.com/user-attachments/assets/e08adc07-ce36-4d88-9142-9cdc793b3ce6" />
+
+
 
 
 
