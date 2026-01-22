@@ -58,6 +58,16 @@ ggplot(mpg, aes(x = class, fill = class)) +
 ```
 <img width="721" height="428" alt="Rplot01" src="https://github.com/user-attachments/assets/e08adc07-ce36-4d88-9142-9cdc793b3ce6" />
 
+## A Few Notes on Usage
+### 1. Mind the Color Collisions
+  I have tried my best to pick colors within each palette that are easy to tell apart. However, because these are inspired by specific movie stills, some shades might still look quite similar to one another. So, always give your final plot a "squint test."
+
+### 2. Best for Categories, Not Gradients
+  These palettes work better for distinct categories rather than continuous data. If you use these for a continuous scale (like a scatter plot gradient or a heatmap), the colors will not form a coherent "low-to-high" transition. This can make your data very difficult to interpret.
+
+### 3. Check Before You Print
+  They are not optimized for grayscale printing. If you're publishing a paper that might be printed, please double-check your plot with a grayscale filter first.
+
 
 
 
